@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Produtos - Biolux</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><h1>Biolux</h1></a>
+      </div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="kits.html">Kits</a></li>
+        <li><a href="cuidados.html">Cuidados</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="#"><img src="./icons8-user-48.png" alt="Icon 2" /></a>
+        <a href="#"
+          ><img src="./icons8-add-shopping-cart-50.png" alt="Icon 1"
+        /></a>
+      </div>
+      <button id="menu-hamburger" class="hamburger">☰</button>
+    </nav>
+
+    <style>
+      .container {
+        padding: 20px;
+      }
+
+      .container h2 {
+        color: gray;
+        text-align: center;
+        font-weight: 200;
+      }
+
+      .produtos-lista {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px; /* Aumenta o espaçamento entre os produtos */
+        justify-content: center;
+      }
+
+      .produto-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 40px; /* Aumenta o padding */
+        text-align: center;
+        max-width: 400px; /* Aumenta a largura máxima */
+        width: 400px; /* Define a largura fixa */
+        height: 600px; /* Define a altura fixa */
+      }
+
+      .produto-item img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .produto-item h2 {
+        color: gray;
+        font-size: 24px; /* Aumenta o tamanho da fonte */
+        margin-top: 10px;
+        font-weight: 400;
+        margin-bottom: 10px; /* Aumenta o espaçamento inferior */
+      }
+
+      .produto-item p {
+        font-size: 16px; /* Aumenta o tamanho da fonte */
+        margin-bottom: 10px; /* Aumenta o espaçamento inferior */
+      }
+
+      p span {
+        font-size: 20px; /* Aumenta o tamanho da fonte */
+      }
+
+      .produto-item button {
+        font-size: 16px;
+        padding: 10px 30px; /* Aumenta o padding do botão */
+        margin-top: 10px; /* Aumenta o espaçamento superior */
+        color: #fff;
+        background-color: #000;
+        cursor: pointer;
+      }
+
+      /* Responsividade para telas menores */
+      @media (max-width: 768px) {
+        .produto-item {
+          max-width: 100%; /* Ajusta a largura para 100% */
+          padding: 20px; /* Reduz o padding para telas menores */
+          height: auto; /* Ajusta a altura automaticamente */
+        }
+
+        .produtos-lista {
+          gap: 20px; /* Reduz o espaçamento entre os produtos */
+        }
+
+        .produto-item h2 {
+          font-size: 20px; /* Reduz o tamanho da fonte */
+        }
+
+        .produto-item p {
+          font-size: 16px; /* Reduz o tamanho da fonte */
+        }
+
+        p span {
+          font-size: 18px; /* Reduz o tamanho da fonte */
+        }
+
+        .produto-item button {
+          padding: 10px; /* Reduz o padding do botão */
+        }
+      }
+    </style>
+
+    <div class="container">
+      <div class="produtos-lista">
+        <div class="produto-item">
+          <img src="./10.png" alt="Produto 1" />
+          <h2>Kit Hidratação</h2>
+          <p>
+            Creme hidratante. hidratação intensa e deixa a pele suave e
+            radiante. Uso Diurno.
+          </p>
+          <p>Preço: R$<span>60</span>,00</p>
+          <button>ADICIONAR AO CARRINHO</button>
+        </div>
+
+        <div class="produto-item">
+          <img src="./11.png" alt="Produto 2" />
+          <h2>Kit Hidratação</h2>
+          <p>
+            Creme hidratante. hidratação intensa, deixa a pele suave e macia.
+            Uso Noturno.
+          </p>
+          <p>Preço: R$<span>60</span>,00</p>
+          <button>ADICIONAR AO CARRINHO</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="section-title"></div>
+          <a href="#">Nosso Blog</a>
+          <a href="#">Dúvidas e Informações</a>
+          <a href="#">Política de privacidade</a>
+          <a href="#">biolux@biolux.com</a>
+        </div>
+        <div class="footer-section">
+          <div class="logo">
+            <h1>Biolux</h1>
+            <div class="social-icons">
+              <a href="#"
+                ><img src="./icons8-facebook-cinza-50.png" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="./icons8-instagram-cinza-50.png" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="developer-credit">Desenvolvido por: Paulo Jaquetto</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

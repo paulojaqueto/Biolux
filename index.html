@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Biolux</title>
+  </head>
+  <body>
+    
+    <nav>
+      <div class="logo"><a href="index.html"><h1>Biolux</h1></a></div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="kits.html">Kits</a></li>
+        <li><a href="cuidados.html">Cuidados</a></li>
+        <li><a href="blog.html">Blog</a></li>
+       
+      </ul>
+      <div class="nav-icons">
+        <a href="#"><img src="./icons8-user-48.png" alt="Icon 2" /></a>
+        <a href="#"><img src="./icons8-add-shopping-cart-50.png" alt="Icon 1" /></a>
+      </div>
+      <button id="menu-hamburger" class="hamburger">☰</button>
+    </nav>
+    
+    <div class="hero">
+      <img src="./blue_berry.jpg" alt="Hero Image" />
+      <div class="overlay-text">
+        <h1>"Cuidados<br>&nbsp;&nbsp;que fazem<br />&nbsp;&nbsp;brilhar"</h1>
+        <div class="cta-container">
+          <button class="cta-button">SAIBA MAIS</button>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="marquee">
+      <div class="marquee-content">
+        <span>FRETE GRÁTIS A PARTIR DE R$ 149 PARA SUDESTE | 15% OFF NO PIX</span>
+        <span>FRETE GRÁTIS A PARTIR DE R$ 149 PARA SUDESTE | 15% OFF NO PIX</span>
+        <span>FRETE GRÁTIS A PARTIR DE R$ 149 PARA SUDESTE | 15% OFF NO PIX</span>
+        <span>FRETE GRÁTIS A PARTIR DE R$ 149 PARA SUDESTE | 15% OFF NO PIX</span>
+        <span>FRETE GRÁTIS A PARTIR DE R$ 149 PARA SUDESTE | 15% OFF NO PIX</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="produtos">
+        <h2>CONHEÇA A NOSSA LINHA DE PRODUTOS</h2>
+        <div class="carousel-container">
+          <button class="prev">&#10094;</button>
+          <div class="carousel">
+            <div class="carousel-item">
+              <img src="./8.png" alt="Produto 1" />
+              <h2>SKIN WATER</h2>
+              <p>R$60,00</p>
+              <button>ADICIONAR AO CARRINHO</button>
+            </div>
+            <div class="carousel-item">
+              <img src="./7.png" alt="Produto 2" />
+              <h2>HAND CREAM</h2>
+              <p>R$60,00</p>
+              <button>ADICIONAR AO CARRINHO</button>
+            </div>
+            <div class="carousel-item">
+              <img src="./6.png" alt="Produto 3" />
+              <h2>BODY CREAM</h2>
+              <p>R$60,00</p>
+              <button>ADICIONAR AO CARRINHO</button>
+            </div>
+            <div class="carousel-item">
+              <img src="./5.png" alt="Produto 4" />
+              <h2>HAND E FACE CREAM</h2>
+              <p>R$60,00</p>
+              <button>ADICIONAR AO CARRINHO</button>
+            </div>
+            <div class="carousel-item">
+              <img src="./4.png" alt="Produto 5" />
+              <h2>FOAM WASH</h2>
+              <p>R$60,00</p>
+              <button>ADICIONAR AO CARRINHO</button>
+            </div>
+            <div class="carousel-item">
+              <img src="./3.png" alt="Produto 6" />
+              <h2>GEL SKIN</h2>
+              <p>R$60,00</p>
+              <button>ADICIONAR AO CARRINHO</button>
+            </div>
+            <div class="carousel-item">
+              <img src="./2.png" alt="Produto 6" />
+              <h2>ANTI-AGE</h2>
+              <p>R$60,00</p>
+              <button>ADICIONAR AO CARRINHO</button>
+            </div>
+            <div class="carousel-item">
+              <img src="./1.png" alt="Produto 6" />
+              <h2>DAY CREAM</h2>
+              <p>R$60,00</p>
+              <button>ADICIONAR AO CARRINHO</button>
+            </div>
+            <div class="carousel-item">
+              <img src="./9.png" alt="Produto 6" />
+              <h2>NATURAL SOAP</h2>
+              <p>R$60,00</p>
+              <button>ADICIONAR AO CARRINHO</button>
+            </div>
+          </div>
+          <button class="next">&#10095;</button>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".carousel");
+        const items = document.querySelectorAll(".carousel-item");
+        const prev = document.querySelector(".prev");
+        const next = document.querySelector(".next");
+
+        let index = 0;
+
+        function updateCarousel() {
+          const width = items[0].clientWidth;
+          carousel.style.transform = `translateX(${-index * width}px)`;
+        }
+
+        function showPrev() {
+          index = index > 0 ? index - 1 : items.length - 1;
+          updateCarousel();
+        }
+
+        function showNext() {
+          index = index < items.length - 1 ? index + 1 : 0;
+          updateCarousel();
+        }
+
+        prev.addEventListener("click", showPrev);
+        next.addEventListener("click", showNext);
+
+        // Initial adjustment
+        updateCarousel();
+
+        // Adjust carousel on window resize
+        window.addEventListener("resize", updateCarousel);
+      });
+    </script>
+
+    
+    <div class="nova-area-grid">
+      <div class="grid-item quadro-1">
+        <img src="./Ingredientes.png" alt="Quadro 1" />
+      </div>
+      <div class="grid-item quadro-2">
+        <img src="./remove-m.jpg" alt="Quadro 2" />
+      </div>
+      <div class="grid-item quadro-3">
+        <img src="./natu2.jpg" alt="Quadro 3" />
+      </div>
+      <div class="grid-item quadro-4">
+        <img src="./organicos.png" alt="Quadro 4" />
+      </div>
+    </div>
+
+    <div class="area-organica">
+      <div class="organicos">
+        <img src="./mulher-ibisco.jpg" alt="Produtos Orgânicos" />
+        <div class="overlay-text-2">
+          <div class="overlay-background">
+            <h1>Seja Natural, seja <span style="font-family:'higuenregular';">Biolux</span>!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="section-title"></div>
+          <a href="#">Nosso Blog</a>
+          <a href="#">Dúvidas e Informações</a>
+          <a href="#">Política de privacidade</a>
+          <a href="#">biolux@biolux.com</a>
+        </div>
+        <div class="footer-section">
+        
+        <div class="logo">
+          <h1>Biolux</h1>
+          <div class="social-icons">
+            <a href="#"
+              ><img src="./icons8-facebook-cinza-50.png" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="./icons8-instagram-cinza-50.png" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="developer-credit">
+      Desenvolvido por: Paulo Jaquetto
+  </div>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
