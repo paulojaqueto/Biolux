@@ -136,17 +136,30 @@ a:hover::after {
     flex-direction: row;
     position: absolute;
     top: 100%;
+    left: 0;
     right: 0;
-    left: -20px;
     background-color: #ffffff8c;
-    width: 100%;
+    width: 100%; /* Ocupa toda a largura disponível */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total */
     z-index: 10;
     text-align: center;
     padding: 10px;
+    margin: 0;
   }
 
   #nav-links.active {
     display: flex;
+  }
+
+  #nav-links.active {
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    gap: 3px; /* Define o espaçamento entre os links */
+  }
+
+  #nav-links a {
+    font-size: 14px; /* Diminui o tamanho da fonte */
+    padding: 5px; /* Ajusta o padding dos links */
   }
 
   .nav-icons {
@@ -775,3 +788,4 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+
