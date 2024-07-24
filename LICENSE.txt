@@ -1,11 +1,8 @@
-MIT License
+Direitos Autorais (c) [24/07/2024] [PAULO RICARDO MARCHI GIACHETTO]
 
-Copyright (c) [2024] [PAULO RICARDO MARCHI GIACHETTO]
+Todos os direitos reservados.
 
-Permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o "Software"), para lidar no Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, desde que as seguintes condições sejam atendidas:
-
-A partir da seguinte condição:
-
-O aviso de copyright acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
+Este software e a documentação associada são propriedade exclusiva de [PAULO RICARDO MARCHI GIACHETTO]. Nenhuma permissão é concedida para copiar, modificar, distribuir ou usar este software para qualquer propósito sem a autorização expressa por escrito do autor.
 
 O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM GARANTIAS DE QUALQUER TIPO, EXPRESSAS OU IMPLÍCITAS, INCLUINDO, SEM LIMITAÇÃO, GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM DETERMINADO FIM E NÃO INFRAÇÃO. EM NENHUM CASO OS AUTORES OU TITULARES DOS DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRAS RESPONSABILIDADES, SEJA EM UMA AÇÃO DE CONTRATO, AÇÃO DE DELITO OU OUTRA, DECORRENTES DE OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.
+
